@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ea978240a2984860af3cedac94b2188, type: 3}
+  m_Name: PowerUp.TeacherExample2
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUpData
+  powerUpName: Teacher Example
+  colorIndicator: {r: 0.19387114, g: 0.9137255, b: 0.1254902, a: 0}
+  duration: 10
+  pushForceMultiplier: 1
+  massIncrease: 0
+  knockbackResistance: 0
+  pushRange: 0
+  areaOfEffectPush: 0
+  speedMultiplier: 1
+  accelerationBoost: 0
+  jumpPowerBoost: 0
+  grantDash: 0
+  dashCharges: 0
+  gravityMultiplier: 1
+  scoreValue: 0
+  scoreMultiplier: 1
+  magnetRadius: 0
+  collectionRangeBoost: 0
+  shieldActive: 0
+  shieldHitPoints: 0
+  invincibility: 0
+  respawnTime: 0
+  anchorMode: 0
+  freezeNearbyPlayers: 0
+  stunDuration: 0
+  reverseControls: 0
+  confusionRadius: 0
+  stealPoints: 0
+  pointsStealAmount: 0
