@@ -44,10 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4061a7311eea49ccb9a12e7decbed96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
-  powerups:
-  - {fileID: 1192983798335586, guid: de7236721e4394f28aed9a5859eb97a4, type: 3}
-  - {fileID: 107744, guid: ada3204236b28426fb3addef11a0d471, type: 3}
-  - {fileID: 132260, guid: db27c05fd79b342449d8a1299b378930, type: 3}
+  powerups: []
   scoreable: {fileID: 148032, guid: e3ac7ab09583949ba9200095a61bc466, type: 3}
   enemy: {fileID: 4591084221315823993, guid: be57aff12bba84bf8a40501466ea88cc, type: 3}
   powerupRate: 3
