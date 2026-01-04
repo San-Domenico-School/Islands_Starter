@@ -139,5 +139,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1fc4ec0fedd844e9bf747ac58ce4662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnablesController
-  timeInScene: 6
+  timeInScene: 3
   rotation: {x: 0, y: 0, z: 0}

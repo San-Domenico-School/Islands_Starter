@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d479518eb12f429fb71f899ee9c3a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpConfig
-  data: {fileID: 11400000, guid: 576141ebb2cfd42be89718cfd5301c39, type: 2}
+  data: {fileID: 0}
 --- !u!114 &-6200679884953223360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,5 +139,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1fc4ec0fedd844e9bf747ac58ce4662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnablesController
-  timeInScene: 15
-  rotation: {x: 0, y: 0.3, z: 0}
+  timeInScene: 3
+  rotation: {x: 0, y: 0, z: 0}

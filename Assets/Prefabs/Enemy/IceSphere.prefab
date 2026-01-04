@@ -101,9 +101,9 @@ GameObject:
   - component: {fileID: 6453142181516924021}
   - component: {fileID: 4552853904830476268}
   - component: {fileID: 4024428423783189158}
+  - component: {fileID: 4653923784500891411}
   - component: {fileID: 2942857098453285842}
   - component: {fileID: 7544337953438749708}
-  - component: {fileID: 4653923784500891411}
   m_Layer: 0
   m_Name: IceSphere
   m_TagString: Untagged
@@ -175,6 +175,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4653923784500891411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4591084221315823993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549f323a61e0e430394cf97ef6bea3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!198 &2942857098453285842
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4978,15 +4990,3 @@ ParticleSystemRenderer:
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
---- !u!114 &4653923784500891411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4591084221315823993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 549f323a61e0e430394cf97ef6bea3c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyController

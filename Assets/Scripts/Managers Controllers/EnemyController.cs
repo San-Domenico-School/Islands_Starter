@@ -15,7 +15,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private float moveSpeed = 1.75f;
+    [SerializeField] private float moveSpeed = 1.55f;
     
     private Transform targetPlayer;
      private float reductionEachRepeat;
