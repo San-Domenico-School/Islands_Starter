@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   powerups: []
-  scoreable: {fileID: 148032, guid: e3ac7ab09583949ba9200095a61bc466, type: 3}
+  scoreable: {fileID: 0}
   enemy: {fileID: 4591084221315823993, guid: be57aff12bba84bf8a40501466ea88cc, type: 3}
   powerupRate: 3
   scoreableRate: 3
