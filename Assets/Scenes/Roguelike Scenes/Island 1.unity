@@ -398,6 +398,14 @@ PrefabInstance:
       propertyPath: 'powerups.Array.data[2]'
       value: 
       objectReference: {fileID: 1672443178567878, guid: e409c1591ec2d4be8996ad3f5446f618, type: 3}
+    - target: {fileID: 6071070785545246905, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
+      propertyPath: m_JoinBehavior
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071070785545246905, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8358332775311980685, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
       propertyPath: m_Name
       value: Managers

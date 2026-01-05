@@ -24,6 +24,12 @@ public class PlayerJoinHandler : MonoBehaviour
     [SerializeField] private Color colorX = Color.green;
     [SerializeField] private Color colorY = Color.yellow;
     [SerializeField] private Color colorKeyboard = Color.white;
+    private bool[] playerSelected;
+
+    void Start()
+    {
+        playerSelected = new bool[4];
+    }
 
     void Update()
     {
@@ -63,27 +69,31 @@ public class PlayerJoinHandler : MonoBehaviour
             Color? selectedColor = null;
             int? teamID = null;
 
-            if (gamepad.buttonSouth.wasPressedThisFrame) 
+            if (gamepad.buttonSouth.wasPressedThisFrame && !playerSelected[0]) 
             {
                 // A button
+                playerSelected[0] = true;
                 selectedColor = colorA;
                 teamID = 0;
             }
-            else if (gamepad.buttonEast.wasPressedThisFrame)
+            else if (gamepad.buttonEast.wasPressedThisFrame && !playerSelected[1])
             {
                  // B button
+                playerSelected[1] = true;
                 selectedColor = colorB;
                 teamID = 1;
             }
-            else if (gamepad.buttonWest.wasPressedThisFrame)
+            else if (gamepad.buttonWest.wasPressedThisFrame && !playerSelected[2])
             {
                 // X button
+                playerSelected[2] = true;
                 selectedColor = colorX;
                 teamID = 2;
             }
-            else if (gamepad.buttonNorth.wasPressedThisFrame)
+            else if (gamepad.buttonNorth.wasPressedThisFrame && !playerSelected[3])
             {
                  // Y button
+                playerSelected[3] = true;
                 selectedColor = colorY;
                 teamID = 3;
             }
