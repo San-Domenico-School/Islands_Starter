@@ -10,7 +10,7 @@
 *******************************************************************/
 using UnityEngine;
 
-public class PlayerScoreCollector : MonoBehaviour
+public class PlayerScoreHandler : MonoBehaviour
 {
     // Identifies which team this player belongs to. 
     // Used as an index when sending scores to GlobalEvents.

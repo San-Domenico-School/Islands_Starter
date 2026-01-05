@@ -121,10 +121,10 @@ public class PlayerJoinHandler : MonoBehaviour
     // 0 for 9th grade, 1 for 10th grade, 2 for 11th grade, 3 for 12th grade,
     void SetTeamID(PlayerInput playerInput, int teamID)
     {
-        var  playerScoreCollector = playerInput.GetComponentInChildren< PlayerScoreCollector>();
-        if ( playerScoreCollector != null)
+        var  playerScoreHandler= playerInput.GetComponentInChildren< PlayerScoreHandler>();
+        if ( playerScoreHandler != null)
         {
-            playerScoreCollector.teamID = teamID;
+            playerScoreHandler.teamID = teamID;
         }
     }
 }

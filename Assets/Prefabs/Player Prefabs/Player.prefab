@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 590097443308498799}
   - component: {fileID: 3087104295479261538}
   - component: {fileID: 7814819013599213196}
-  - component: {fileID: 4190883789104957162}
+  - component: {fileID: 8588838136029141123}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0447660b42790490cb0a53003d00384d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
---- !u!114 &4190883789104957162
+--- !u!114 &8588838136029141123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,9 +400,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3163001810064221497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0757de7ee544c437b9cfe00934285353, type: 3}
+  m_Script: {fileID: 11500000, guid: b70b937e405034a9db4a0a6404a9b3dc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerScoreCollector
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerScoreHandler
   scoreMultiplier: 1
 --- !u!1001 &3057540090166697277
 PrefabInstance:
