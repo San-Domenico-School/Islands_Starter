@@ -43,7 +43,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnPowerup()
     {
         float spawnThreshold = powerupRate / 60f * Time.deltaTime;
-        if(Random.value < spawnThreshold)
+        if(Random.value < spawnThreshold && powerups.Length > 0)
         {
             int choiceIndex = Random.Range(0, powerups.Length); 
             Vector3 position = SpawnLocation();
@@ -55,7 +55,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnScoreable()
     { 
         float spawnThreshold = scoreableRate / 60f * Time.deltaTime;
-        if(Random.value < spawnThreshold)
+        if(Random.value < spawnThreshold && scoreable != null)
         {
             Vector3 position = SpawnLocation();
             Instantiate(scoreable, position, transform.rotation); 
@@ -66,7 +66,7 @@ public class SpawnManager : MonoBehaviour
     // Wave grows each cycle up to the maximum wave
     void SpawnEnemy()
     {
-        if(enemyCount == 0)
+        if(enemyCount == 0 && enemy != null)
         {
             // Spawn a wave of enemies
             for(int i = 0; i < currentWave; i++)
@@ -84,10 +84,12 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    // Returns a location on the Island
     private Vector3 SpawnLocation()
     {
         Vector3 position = Vector3.zero;
 
+        // Guarantees that it is on the island
         while (position.magnitude == 0 || position.magnitude > 12.3)
         {
             float xPos = Random.Range(-11.0f, 11.0f); 
