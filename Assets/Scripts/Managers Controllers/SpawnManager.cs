@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
 {
     [Header("Objects to Spawn")]
     [SerializeField] private GameObject[] powerups;
-     [SerializeField] private GameObject scoreable;
+     [SerializeField] private GameObject[] scoreable;
     [SerializeField] private GameObject enemy;
    
     [Header("Spawn Rates per Minute")]
@@ -55,10 +55,11 @@ public class SpawnManager : MonoBehaviour
     void SpawnScoreable()
     { 
         float spawnThreshold = scoreableRate / 60f * Time.deltaTime;
-        if(Random.value < spawnThreshold && scoreable != null)
+        if(Random.value < spawnThreshold && scoreable.Length > 0)
         {
+            int choiceIndex = Random.Range(0, powerups.Length); 
             Vector3 position = SpawnLocation();
-            Instantiate(scoreable, position, transform.rotation); 
+            Instantiate(scoreable[choiceIndex], position, transform.rotation); 
         }
     }
 
