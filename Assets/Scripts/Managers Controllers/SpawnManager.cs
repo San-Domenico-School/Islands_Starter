@@ -57,7 +57,7 @@ public class SpawnManager : MonoBehaviour
         float spawnThreshold = scoreableRate / 60f * Time.deltaTime;
         if(Random.value < spawnThreshold && scoreable.Length > 0)
         {
-            int choiceIndex = Random.Range(0, powerups.Length); 
+            int choiceIndex = Random.Range(0, scoreable.Length); 
             Vector3 position = SpawnLocation();
             Instantiate(scoreable[choiceIndex], position, transform.rotation); 
         }
