@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2380596}
   - component: {fileID: 4949897879873162193}
   - component: {fileID: 7580034710240723332}
-  - component: {fileID: 3342727419170477141}
   - component: {fileID: 8787995345146209840}
   - component: {fileID: 2276257579452188443}
+  - component: {fileID: -2157773679915418253}
   m_Layer: 0
   m_Name: DollarSign
   m_TagString: Scoreable
@@ -130,20 +130,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.56108856, y: 1.58, z: 0.19124222}
   m_Center: {x: -0.10422611, y: 0.4, z: 0.09562111}
---- !u!114 &3342727419170477141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 148032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fc4ec0fedd844e9bf747ac58ce4662, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnablesController
-  timeInScene: 3
-  rotation: {x: 0, y: -0.1, z: 0}
 --- !u!198 &8787995345146209840
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4947,3 +4933,17 @@ ParticleSystemRenderer:
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
+--- !u!114 &-2157773679915418253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6190d78be3bd345b98a8731f59f26664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectableController
+  timeInScene: 3
+  rotation: {x: 0, y: 0, z: 0}

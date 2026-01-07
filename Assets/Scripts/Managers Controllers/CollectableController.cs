@@ -11,7 +11,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class SpawnablesController : MonoBehaviour
+public class CollectableController : MonoBehaviour
 {
     [Range(3, 30)]
     [SerializeField] private float timeInScene;
@@ -38,5 +38,3 @@ public class SpawnablesController : MonoBehaviour
         Destroy(gameObject);
     }
 }
-
- 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2358098}
   - component: {fileID: -2956999288195884736}
   - component: {fileID: 7850425092084116635}
-  - component: {fileID: 1013740400869812123}
+  - component: {fileID: -1056370785965983494}
   m_Layer: 0
   m_Name: GoldCupIcon
   m_TagString: PowerUp
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpConfig
   data: {fileID: 0}
---- !u!114 &1013740400869812123
+--- !u!114 &-1056370785965983494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 173560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fc4ec0fedd844e9bf747ac58ce4662, type: 3}
+  m_Script: {fileID: 11500000, guid: 6190d78be3bd345b98a8731f59f26664, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnablesController
-  timeInScene: 6
+  m_EditorClassIdentifier: Assembly-CSharp::CollectableController
+  timeInScene: 3
   rotation: {x: 0, y: 0, z: 0}

@@ -395,6 +395,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1463359335791524856, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
+      propertyPath: scoreable.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463359335791524856, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
       propertyPath: 'powerups.Array.data[2]'
       value: 
       objectReference: {fileID: 1672443178567878, guid: e409c1591ec2d4be8996ad3f5446f618, type: 3}

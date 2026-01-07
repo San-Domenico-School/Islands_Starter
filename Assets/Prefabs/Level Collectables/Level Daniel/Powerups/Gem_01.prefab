@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23769591346357710}
   - component: {fileID: 1665316992834768121}
   - component: {fileID: -8020054486406402871}
-  - component: {fileID: 3990563825415613910}
+  - component: {fileID: -2196799666075914068}
   m_Layer: 0
   m_Name: Gem_01
   m_TagString: PowerUp
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d479518eb12f429fb71f899ee9c3a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpConfig
-  data: {fileID: 11400000, guid: d695ce09a3f98404c92adc267d00d49a, type: 2}
+  data: {fileID: 0}
 --- !u!135 &-8020054486406402871
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -127,7 +127,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: -0.000000022351742, z: 0}
---- !u!114 &3990563825415613910
+--- !u!114 &-2196799666075914068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1192983798335586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fc4ec0fedd844e9bf747ac58ce4662, type: 3}
+  m_Script: {fileID: 11500000, guid: 6190d78be3bd345b98a8731f59f26664, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnablesController
-  timeInScene: 6
+  m_EditorClassIdentifier: Assembly-CSharp::CollectableController
+  timeInScene: 3
   rotation: {x: 0, y: 0, z: 0}

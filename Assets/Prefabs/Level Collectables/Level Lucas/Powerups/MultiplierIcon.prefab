@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2309454}
   - component: {fileID: 3685342061747756766}
   - component: {fileID: -4731443740670243449}
-  - component: {fileID: 7384489713738318499}
+  - component: {fileID: 7781562307193399353}
   m_Layer: 0
   m_Name: MultiplierIcon
   m_TagString: PowerUp
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpConfig
   data: {fileID: 0}
---- !u!114 &7384489713738318499
+--- !u!114 &7781562307193399353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 178452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fc4ec0fedd844e9bf747ac58ce4662, type: 3}
+  m_Script: {fileID: 11500000, guid: 6190d78be3bd345b98a8731f59f26664, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnablesController
-  timeInScene: 6
+  m_EditorClassIdentifier: Assembly-CSharp::CollectableController
+  timeInScene: 3
   rotation: {x: 0, y: 0, z: 0}

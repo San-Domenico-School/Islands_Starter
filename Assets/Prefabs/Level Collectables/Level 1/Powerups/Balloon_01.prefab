@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23247213139840258}
   - component: {fileID: -2444544932774644976}
   - component: {fileID: 1056051179324378949}
-  - component: {fileID: -6200679884953223360}
+  - component: {fileID: 5298544096722629120}
   m_Layer: 0
   m_Name: Balloon_01
   m_TagString: PowerUp
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpConfig
   data: {fileID: 0}
---- !u!114 &-6200679884953223360
+--- !u!114 &5298544096722629120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1672443178567878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fc4ec0fedd844e9bf747ac58ce4662, type: 3}
+  m_Script: {fileID: 11500000, guid: 6190d78be3bd345b98a8731f59f26664, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnablesController
+  m_EditorClassIdentifier: Assembly-CSharp::CollectableController
   timeInScene: 3
   rotation: {x: 0, y: 0, z: 0}
