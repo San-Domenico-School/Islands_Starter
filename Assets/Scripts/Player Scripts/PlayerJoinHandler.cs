@@ -23,10 +23,11 @@ public class PlayerJoinHandler : MonoBehaviour
     [SerializeField] private Color colorX;
     [SerializeField] private Color colorY;
     [SerializeField] private Color colorKeyboard;
+    [SerializeField] private int playersPerTeam = 1;
 
     // Track which devices have already joined
     private HashSet<InputDevice> joinedDevices = new HashSet<InputDevice>();
-    private bool[] teamSelected = new bool[4];
+    private int[] teamSelected = new int[4];
 
     void Update()
     {
@@ -56,22 +57,22 @@ public class PlayerJoinHandler : MonoBehaviour
             Color? selectedColor = null;
             int? teamID = null;
 
-            if (gamepad.buttonEast.wasPressedThisFrame && !teamSelected[0]) 
+            if (gamepad.buttonEast.wasPressedThisFrame && teamSelected[0] < playersPerTeam) 
             {
                 selectedColor = colorA;
                 teamID = 0;
             }
-            else if (gamepad.buttonSouth.wasPressedThisFrame && !teamSelected[1])
+            else if (gamepad.buttonSouth.wasPressedThisFrame && teamSelected[1] < playersPerTeam)
             {
                 selectedColor = colorB;
                 teamID = 1;
             }
-            else if (gamepad.buttonNorth.wasPressedThisFrame && !teamSelected[2])
+            else if (gamepad.buttonNorth.wasPressedThisFrame && teamSelected[2] < playersPerTeam)
             {
                 selectedColor = colorX;
                 teamID = 2;
             }
-            else if (gamepad.buttonWest.wasPressedThisFrame && !teamSelected[3])
+            else if (gamepad.buttonWest.wasPressedThisFrame && teamSelected[3] < playersPerTeam)
             {
                 selectedColor = colorY;
                 teamID = 3;
@@ -91,7 +92,7 @@ public class PlayerJoinHandler : MonoBehaviour
         if (newPlayer != null)
         {
             joinedDevices.Add(device); // Mark this controller as "used"
-            teamSelected[teamID] = true;
+            teamSelected[teamID]++;
             SetPlayerColor(newPlayer, color);
             SetTeamID(newPlayer, teamID);
         }
