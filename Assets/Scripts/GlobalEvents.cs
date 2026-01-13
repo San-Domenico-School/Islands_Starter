@@ -18,6 +18,7 @@ public static class GlobalEvents
     // 1. THE NOTEBOOK (This is where the data is stored)
     // This array stays in memory as long as the game is open.
     public static int[] TeamScores = new int[4]; 
+    public static int PlayersPerTeam;
     public static int GameTime = 450;             // This needs to be level time * number of levels
     public static int SceneIndex = 0;
 

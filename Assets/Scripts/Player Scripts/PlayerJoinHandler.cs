@@ -29,6 +29,11 @@ public class PlayerJoinHandler : MonoBehaviour
     private HashSet<InputDevice> joinedDevices = new HashSet<InputDevice>();
     private int[] teamSelected = new int[4];
 
+    void Start()
+    {
+        GlobalEvents.PlayersPerTeam = playersPerTeam;
+    }
+    
     void Update()
     {
         CheckKeyboardJoin();
@@ -57,22 +62,22 @@ public class PlayerJoinHandler : MonoBehaviour
             Color? selectedColor = null;
             int? teamID = null;
 
-            if (gamepad.buttonEast.wasPressedThisFrame && teamSelected[0] < playersPerTeam) 
+            if (gamepad.buttonEast.wasPressedThisFrame && teamSelected[0] < GlobalEvents.PlayersPerTeam) 
             {
                 selectedColor = colorA;
                 teamID = 0;
             }
-            else if (gamepad.buttonSouth.wasPressedThisFrame && teamSelected[1] < playersPerTeam)
+            else if (gamepad.buttonSouth.wasPressedThisFrame && teamSelected[1] < GlobalEvents.PlayersPerTeam)
             {
                 selectedColor = colorB;
                 teamID = 1;
             }
-            else if (gamepad.buttonNorth.wasPressedThisFrame && teamSelected[2] < playersPerTeam)
+            else if (gamepad.buttonNorth.wasPressedThisFrame && teamSelected[2] < GlobalEvents.PlayersPerTeam)
             {
                 selectedColor = colorX;
                 teamID = 2;
             }
-            else if (gamepad.buttonWest.wasPressedThisFrame && teamSelected[3] < playersPerTeam)
+            else if (gamepad.buttonWest.wasPressedThisFrame && teamSelected[3] < GlobalEvents.PlayersPerTeam)
             {
                 selectedColor = colorY;
                 teamID = 3;

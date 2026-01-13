@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         moveMagnitude = 250;
         linearDamping = 0.5f;
         appliedForce = 1;
+        playerRB.AddForce(Random.onUnitSphere * moveMagnitude, ForceMode.Force);
     }
 
     // Updates physics-based movement and checks global scores 

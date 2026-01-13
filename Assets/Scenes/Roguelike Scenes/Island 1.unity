@@ -446,6 +446,10 @@ PrefabInstance:
       propertyPath: colorY.r
       value: 0.015686274
       objectReference: {fileID: 0}
+    - target: {fileID: 8429727767482556337, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
+      propertyPath: playersPerTeam
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
