@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Islands_Starter.slnx"
+    "dotnet.defaultSolution": "Islands_Starter-to-Finish.slnx"
 }

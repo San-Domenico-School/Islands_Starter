@@ -42,11 +42,12 @@ private Vector3 originalScale;
     {
         // We only trigger this if the power-up has a specific "fun" color
         // This prevents the player from stretching for EVERY power-up
+        Debug.Log($"Powerup Name: {data.powerUpName}");
         if (data.powerUpName.Equals("Teacher Example"))
         {
             originalScale = transform.parent.localScale;
             // Stretch the player vertically like a noodle
-            transform.parent.localScale = new Vector3(0.75f, .75f, 0.75f);
+            transform.parent.localScale = new Vector3(0.75f, 1.5f, 0.75f);
             Debug.Log("Power-Up Applied: I'm a noodle!");
         }
     }

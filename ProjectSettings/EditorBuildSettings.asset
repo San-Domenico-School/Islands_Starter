@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: a4b96ad7a65484fd4a83cb97540eee50
   - enabled: 1
     path: Assets/Scenes/Roguelike Scenes/Island 2.unity
-    guid: 4341840d4de39484abc54b0819c63459
+    guid: b2837587ee07c4ce08b3f205e253cfed
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
